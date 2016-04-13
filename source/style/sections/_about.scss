@@ -1,0 +1,94 @@
+.about {
+  display: flex;
+  background: #efeee9;
+}
+
+.about_left,
+.about_right {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 15px  40px;
+}
+
+
+.about_right {
+  background: #eeebdf;
+}
+
+.about_me-first,
+.about_me {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about_me-first {
+  width: 375px;
+}
+
+.about_me {
+  width: 440px;
+}
+
+.about_skills {
+
+}
+
+.about_title {
+  @include font(35, $bernier_reg, #455a64);
+  text-align: center;
+  text-transform: uppercase;
+
+  &--big {
+    @include rem-size(63);
+    color: #373e42;
+  }
+}
+
+.about_figure {
+  width: 445px;
+  height: 390px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.about_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about_info {
+  @include font(16, $main-reg, #455a64);
+  margin-bottom: 40px;
+}
+
+.about_skills-title {
+  @include font(28, $main-medium, #455a64);
+  margin-bottom: 20px;
+}
+
+.about_skills-list {
+  margin-bottom: 40px;
+}
+
+.about_skills-item {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  vertical-align: top;
+  margin-left: 32px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
+
+.circle {
+  position: relative;
+}
+
+.about_skill {
+  @include font(14, $main-medium, #00bfa5);
+  @include center();
+}

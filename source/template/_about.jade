@@ -1,0 +1,56 @@
+section.about
+  .about_left
+    .about_me-first
+      .about_title.about_title--big Обо мне
+    .about_me
+      figure.about_figure
+        img.about_img(src="/assets/image/photo.jpg" alt="Сергей Рубец")
+      .about_text
+        .about_title Кто я
+        .about_info
+         p.
+           Я веб разработчик из Чернигова. Мне 27 лет. Занимаюсь разработкой современных сайтов и приложений.
+            Мне нравится делать интересные и современные проекты.
+         p.
+           Этот сайт я сделал в рамках обучения в Школе онлайн образования
+            LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+  .about_right
+    .about_skills
+    .about_title Чем я могу быть <br> вам полезен
+    .about_info.
+      Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend.
+      Но давайте по порядку.
+
+    .about_skills-section
+      .about_skills-title Frontend
+      -
+        var front = [ 'html5', 'css3', 'JavaScript & jQuery']
+        var per = ['320', '300', '250']
+
+      ul.about_skills-list
+        each item, index in front
+          li.about_skills-item
+            .circle(data-width="120"  data-bgColor="#00bfa5"  data-readOnly="true" data-angleArc = per[index])
+            span.about_skill= item
+
+    .about_skills-section
+      .about_skills-title Backend
+      -
+        var front = ['PHP', 'mySQL', 'Node.js & nmp', 'Mongo.db']
+        var per = ['20', '10', '2', '1']
+      ul.about_skills-list
+        each item, index in front
+          li.about_skills-item
+            .circle(data-width="120"  data-bgColor="#00bfa5"  data-readOnly="true" data-angleArc = per[index])
+            span.about_skill= item
+
+    .about_skills-section
+      .about_skills-title WorkFlow
+      -
+        var front = ['Git', 'Gulp', 'Bower']
+        var per = ['200', '300', '280']
+      ul.about_skills-list
+        each item, index in front
+          li.about_skills-item
+            .circle(data-width="120"  data-bgColor="#00bfa5"  data-readOnly="true" data-angleArc = per[index])
+            span.about_skill= item
