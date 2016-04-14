@@ -7,7 +7,16 @@
 .about_right {
   box-sizing: border-box;
   width: 50%;
-  padding: 15px  40px;
+  padding: 20px  40px;
+}
+
+.about_left {
+  padding-right: 10px;
+}
+
+.about_left-wrapper {
+  width: 820px;
+  float: right;
 }
 
 
@@ -29,12 +38,10 @@
   width: 440px;
 }
 
-.about_skills {
 
-}
-
-.about_title {
+.title {
   @include font(35, $bernier_reg, #455a64);
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 

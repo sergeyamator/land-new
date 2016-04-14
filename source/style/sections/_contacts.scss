@@ -1,0 +1,41 @@
+.map {
+  position: relative;
+}
+
+.contacts {
+  @include center();
+  box-sizing: border-box;
+  width: 380px;
+  padding: 30px 40px;
+  border-radius: 5px;
+  background: rgba(white, 0.7);
+}
+
+.contacts_item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact_icon,
+.contact {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact_icon {
+  height: 15px;
+
+  &--skype {
+    height: 20px;
+  }
+}
+
+.contact {
+  @include font(16, $main-medium, #455a64);
+  margin-left: 10px;
+  text-decoration: none;
+}
+

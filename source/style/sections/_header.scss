@@ -82,5 +82,10 @@
 
 .arrow-down {
   @include hcenter();
-  bottom: 100px;
+  bottom: 135px;
+
+  svg {
+    width: 25px;
+    height: 15px;
+  }
 }
