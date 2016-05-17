@@ -1,3 +1,35 @@
 .footer {
-
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 90px;
+  background: rgba(black, 0.5);
 }
+
+.copy {
+  @include center();
+  @include font(16, $main-light, #fff);
+  z-index: 1;
+  text-align: center;
+}
+
+.socials_list--footer {
+  @include vcenter();
+  position: absolute;
+  right: 30px;
+
+  .socials_link {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .socials_svg {
+    @include center();
+    fill: rgba(85, 91, 94, 0.6);
+  }
+}
+
